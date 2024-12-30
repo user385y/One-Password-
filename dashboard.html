@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Password Manager</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>Password Manager</h1>
+      </div>
+      <div class="user-info">
+        <span id="user-welcome">Welcome, <span id="user-email"></span></span>
+        <button id="logout-btn">Logout</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="dashboard-welcome">
+      <h2>Your Dashboard</h2>
+      <p>Here, you can manage your saved passwords and settings.</p>
+    </section>
+
+    <section class="dashboard-actions">
+      <div class="action-card">
+        <h3>Manage Saved Passwords</h3>
+        <p>View, edit, or delete your saved passwords.</p>
+        <button id="manage-passwords-btn">Go to Passwords</button>
+      </div>
+
+      <div id="dashboard-content"></div>
+
+      
+      <div class="action-card">
+        <h3>Settings</h3>
+        <p>Update your preferences and security settings.</p>
+        <button id="settings-btn">Go to Settings</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Password Manager | All rights reserved</p>
+  </footer>
+
+
+  <script src="sessionManager.js"></script>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

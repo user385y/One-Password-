@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Face Detection Extension",
+  "version": "1.0",
+  "description": "Detects faces using face-api.js.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/safetypass.png",
+      "48": "images/safetypass.png",
+      "128": "images/safetypass.png"
+    }
+  },
+  "icons": {
+    "16": "images/safetypass.png",
+    "48": "images/safetypass.png",
+    "128": "images/safetypass.png"
+  },
+  "options_ui": {
+    "page": "popup.html",
+    "open_in_tab": false
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["models/*", "camera.html"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*signup.html*"],  
+      "js": ["signup.js", "camera.js", "face-api.js"]
+    }
+  ],
+  "content_security_policy": {
+   "extension_pages": "script-src 'self'; object-src 'self';"
+  }
+}

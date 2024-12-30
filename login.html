@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-form Up</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    
+
+    <div id="login">
+        <h2>Login </h2>
+        <form id="Login-form" autocomplete="off">
+          <input type="email" id="email" placeholder="Email" required>
+          <div id="email-error-message" class="error-message"></div>
+          
+          <input type="password" id="password" placeholder="Password"required >
+          <div id="password-error-message" class="error-message"></div>
+          <!-- <br> -->
+          <button  type="submit">Login</button>
+          <div id="success-message" class="success-message"></div> 
+        </form>
+        <!-- <button onclick="window.location.reload()">Back</button> -->
+
+        <div id="page-container"></div>
+        <a href="signup.html" id="go-to-signup">Sign up here...</a>
+        <a href="#" id="face-Recognition-Button" >Login with Face ID</a>
+      </div>
+      
+
+      <script src="sessionManager.js"></script>
+
+      <script src="face-api.js"></script>
+      <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facial Recognition</title>
+  <style>
+ #cameraContainer {
+  position: relative;
+  display: inline-block;
+}
+
+video {
+  width: 640px; /* Set video width to the native size */
+  height: 480px; /* Set video height to the native size */
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Ensure the canvas does not block video interaction */
+  z-index: 2; /* Make sure canvas is above the video */
+}
+
+
+  </style>
+  
+</head>
+<body>
+  <div id="app">
+    <h1>Facial Recognition</h1>
+    <canvas id="canvas"></canvas>
+    <div id="cameraContainer">
+      <video id="video" autoplay muted></video>
+       <!-- Canvas for drawing face landmarks -->
+    </div>
+   
+  </div>
+  <div id="page-container"></div>
+
+ 
+  <script src="face-api.js"></script>
+  <!-- Include your custom camera.js file after face-api.js -->
+  <script src="camera.js"></script>
+  <!-- <script src="popup.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+#app {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+button:disabled {
+  background-color: #cccccc;
+}
+
+#cameraContainer {
+  position: relative;
+}
+
+video {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+canvas {
+  display: none;
+}
+
+#capturedImageContainer {
+  margin-top: 20px;
+}
+
+img {
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}

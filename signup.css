@@ -1,0 +1,55 @@
+* {
+  -ms-high-contrast: active; /* Deprecated */
+}
+body {
+    font-family: Arial, sans-serif;
+    
+    background-color: #ffffff;
+    width: 300px;  /* Width of the popup */
+    height: 500px;  
+    
+  }
+
+ 
+  h2 {
+    
+    color: #333;
+  }
+  
+  
+  #signup-form{
+    text-align: center;
+    /* border: 3px solid rebeccapurple; */
+  }
+  
+  input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 220px;
+    height: 20px;
+  }
+  
+  a{
+
+margin: 0 0 0 30px ;
+  }
+  button {
+    display: inline-block;
+    /* margin: 10px 5px; */
+    /* padding: 10px 15px; */
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+ 
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  

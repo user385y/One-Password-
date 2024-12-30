@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="signup-container">
+    <form id="signup-form" autocomplete="off">
+      <h2>Sign Up</h2>
+      <!-- <div id="error-message"></div> Error message will be displayed here -->
+      <div id="success-message" ></div>
+      
+      <input type="email" id="email" placeholder="Email" required>
+      <div id="email-error-message" class="error-message"></div>
+      <input type="password" id="password" placeholder="Password" required>
+      <div id="password-error-message" class="error-message"></div>
+      <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+      
+      <button type="button" id="facial-recognition-btn">Face ID</button>
+      <button type="submit" id="signup-submit">Sign Up</button>
+    </form>
+    <a href="login.html" id="go-to-login">Login here...</a>
+  </div>
+
+  <script src="sessionManager.js"></script>
+
+  <script src="popup.js"></script>
+</body>
+</html>
